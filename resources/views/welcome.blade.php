@@ -8,14 +8,14 @@
         <title>Laravel</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
             html, body {
                 background-color: #fff;
                 color: #000;
-                font-family: 'Raleway', sans-serif;
+                font-family: 'Amiri', sans-serif;
                 font-weight: 100;
                 height: 100vh;
                 margin: 0;
@@ -52,7 +52,7 @@
             .links > a {
                 color: #000;
                 padding: 0 25px;
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -78,8 +78,7 @@
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('login') }}">تسجيل الدخول</a>
                     @endauth
                 @endif
                 </div>
