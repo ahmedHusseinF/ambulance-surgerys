@@ -12,21 +12,21 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="Given_ID" class="col-sm-4 col-form-label text-md-right">{{ "الرقم القومي" }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
+                                <input id="Given_ID" type="text" class="form-control{{ $errors->has('Given_ID') ? ' is-invalid' : '' }}" name="Given_ID" value="{{ old('Given_ID') }}" required autofocus>
 
-                                @if ($errors->has('email'))
+                                @if ($errors->has('Given_ID'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('Given_ID') }}</strong>
                                     </span>
                                 @endif
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ "كلمة السر" }}</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -57,9 +57,9 @@
                                     {{ "تسجيل الدخول" }}
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <!--<a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ "نسيت كلمة المرور" }}
-                                </a>
+                                </a>-->
                             </div>
                         </div>
                     </form>

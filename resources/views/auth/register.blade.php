@@ -26,14 +26,56 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="Given_ID" class="col-md-4 col-form-label text-md-right">{{ 'Given_ID' }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                                <input id="Given_ID" type="text" class="form-control{{ $errors->has('Given_ID') ? ' is-invalid' : '' }}" name="Given_ID" value="{{ old('Given_ID') }}" required>
 
-                                @if ($errors->has('email'))
+                                @if ($errors->has('Given_ID'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
+                                        <strong>{{ $errors->first('Given_ID') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="Gender" class="col-md-4 col-form-label text-md-right">{{ 'Gender' }}</label>
+
+                            <div class="col-md-6">
+                                <input id="Gender" type="text" class="form-control{{ $errors->has('Gender') ? ' is-invalid' : '' }}" name="Gender" value="{{ old('Gender') }}" required>
+
+                                @if ($errors->has('Gender'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('Gender') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="Age" class="col-md-4 col-form-label text-md-right">{{ 'Age' }}</label>
+
+                            <div class="col-md-6">
+                                <input id="Age" type="number" class="form-control{{ $errors->has('Age') ? ' is-invalid' : '' }}" name="Age" value="{{ old('Age') }}" required>
+
+                                @if ($errors->has('Age'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('Age') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="Profession" class="col-md-4 col-form-label text-md-right">{{ 'Profession' }}</label>
+
+                            <div class="col-md-6">
+                                <input id="Profession" type="text" class="form-control{{ $errors->has('Profession') ? ' is-invalid' : '' }}" name="Profession" value="{{ old('Profession') }}" required>
+
+                                @if ($errors->has('Profession'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('Profession') }}</strong>
                                     </span>
                                 @endif
                             </div>
